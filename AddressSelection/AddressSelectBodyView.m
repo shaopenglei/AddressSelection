@@ -113,9 +113,7 @@
     }
     if (tableView.tag==0) [self totleModelArrayAddInitValue];
     [self.totleModelArray removeObjectsInRange:NSMakeRange(tableView.tag+1, self.totleModelArray.count-tableView.tag-1)];
-    
-    if (tableView.tag<2) {
-        //添加第四级在这里添加逻辑
+    if (tableView.tag<2) {//添加第四级在这里添加逻辑，tableView.tag改成<3
         NSMutableArray *cityArray = [NSMutableArray array];
         NSMutableArray *countyArray = [NSMutableArray array];
 //        NSMutableArray *townArray = [NSMutableArray array];
